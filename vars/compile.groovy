@@ -1,7 +1,5 @@
 def call() {
     stage('Compile') {
-        steps {
-            sh "mvn clean compile"
-        }
+        sh "mvn clean compile"
     }
 }
