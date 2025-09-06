@@ -11,7 +11,7 @@ def call(String buildStatus = 'STARTED', String channel = '#general') {
 
     // Send Slack notification
     slackSend(
-        channel: #all-devops,
+        channel: '#all-devops',
         color: colorCode,
         message: "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
     )
